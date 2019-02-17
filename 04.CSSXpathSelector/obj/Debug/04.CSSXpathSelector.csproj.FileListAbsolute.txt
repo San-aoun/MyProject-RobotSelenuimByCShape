@@ -1,0 +1,10 @@
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\bin\Debug\04.CSSXpathSelector.exe.config
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\bin\Debug\04.CSSXpathSelector.exe
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\bin\Debug\04.CSSXpathSelector.pdb
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\bin\Debug\WebDriver.dll
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\bin\Debug\WebDriver.xml
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\obj\Debug\04.CSSXpathSelector.csprojAssemblyReference.cache
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\obj\Debug\04.CSSXpathSelector.csproj.CoreCompileInputs.cache
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\obj\Debug\04.CSSXpathSelector.csproj.CopyComplete
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\obj\Debug\04.CSSXpathSelector.exe
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\obj\Debug\04.CSSXpathSelector.pdb

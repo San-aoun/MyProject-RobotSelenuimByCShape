@@ -1,0 +1,10 @@
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\bin\Debug\03.ClassNameSelector.exe.config
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\bin\Debug\03.ClassNameSelector.exe
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\bin\Debug\03.ClassNameSelector.pdb
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\bin\Debug\WebDriver.dll
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\bin\Debug\WebDriver.xml
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\obj\Debug\03.ClassNameSelector.csprojAssemblyReference.cache
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\obj\Debug\03.ClassNameSelector.csproj.CoreCompileInputs.cache
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\obj\Debug\03.ClassNameSelector.csproj.CopyComplete
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\obj\Debug\03.ClassNameSelector.exe
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\obj\Debug\03.ClassNameSelector.pdb
