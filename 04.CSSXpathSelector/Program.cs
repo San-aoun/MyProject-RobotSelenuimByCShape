@@ -7,34 +7,40 @@ class EntryPoint
 {
     static void Main()
     {
-        string url = "http://testing.todvachev.com/selectors/css-path/";
-        string cssPath = "#post-108 > div > figure > img";
-        string xPath = "//*[@id=\"post-108\"]/div/figure/img";
+        var url = "http://testing.todvachev.com/selectors/css-path/";
+        var cssPath = "";
+        var xPath = "";
 
         IWebDriver driver = new ChromeDriver();
         driver.Navigate().GoToUrl(url);
-        
-        IWebElement cssPathElement = driver.FindElement(By.CssSelector(cssPath));
-        IWebElement xPartElement = driver.FindElement(By.XPath(xPath));
-        
 
-        if (xPartElement.Displayed)
+        try
         {
-            GreenMessage("Yes, I can see the element Xpath, It's rigth there!!");
+            cssPath = "#post-108 > div > figure > img";
+            xPath = "//*[@id=\"post-107\"]/div/figure/img";
+
+            IWebElement[] arr = new IWebElement[2];
+            arr[0] = driver.FindElement(By.CssSelector(cssPath));
+            arr[1] = driver.FindElement(By.XPath(xPath));
+
+            for (var i = 0; i < arr.Length; i++)
+            {
+                if (arr[i].Displayed == true)
+                {
+                    GreenMessage("Yes, I can see the element , It's rigth there!!");
+                }
+                else
+                {
+                    RedMessage("No, Someting wrong!");
+                }
+            }
+                      
         }
-        else
+        catch(Exception)
         {
-            RedMessage("No, Someting wrong!");
+            RedMessage("system err");
         }
 
-        if (cssPathElement.Displayed)
-        {
-            GreenMessage("Yes, I can see the CSS, It's rigth there!!");
-        }
-        else
-        {
-            RedMessage("No, Someting wrong!");
-        }
         driver.Close();
     }
 
