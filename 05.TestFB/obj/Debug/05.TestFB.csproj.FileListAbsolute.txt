@@ -1,0 +1,13 @@
+D:\GitHub\05.TestFB\bin\Debug\05.TestFB.exe.config
+D:\GitHub\05.TestFB\bin\Debug\05.TestFB.exe
+D:\GitHub\05.TestFB\bin\Debug\05.TestFB.pdb
+D:\GitHub\05.TestFB\bin\Debug\nunit.framework.dll
+D:\GitHub\05.TestFB\bin\Debug\WebDriver.dll
+D:\GitHub\05.TestFB\bin\Debug\nunit.framework.pdb
+D:\GitHub\05.TestFB\bin\Debug\nunit.framework.xml
+D:\GitHub\05.TestFB\bin\Debug\WebDriver.xml
+D:\GitHub\05.TestFB\obj\Debug\05.TestFB.csprojAssemblyReference.cache
+D:\GitHub\05.TestFB\obj\Debug\05.TestFB.csproj.CoreCompileInputs.cache
+D:\GitHub\05.TestFB\obj\Debug\05.TestFB.csproj.CopyComplete
+D:\GitHub\05.TestFB\obj\Debug\05.TestFB.exe
+D:\GitHub\05.TestFB\obj\Debug\05.TestFB.pdb
