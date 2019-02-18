@@ -15,8 +15,8 @@ class Program
     static void Main()
     {
         var url = "https://www.facebook.com/";
-        var email = "work_inhome@hotmail.co.th";
-        var pass = "Tan121416";
+        var email = "";
+        var pass = "";
         
         try
         {
