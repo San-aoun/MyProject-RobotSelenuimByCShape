@@ -4,6 +4,7 @@ using OpenQA.Selenium.Chrome;
 using System;
 using System.Threading;
 using NUnit.Framework;
+using System.Collections;
 
 class EntryPoint
 {
@@ -14,37 +15,33 @@ class EntryPoint
         static void Main()
         {
             var url = "http://testing.todvachev.com/selectors/css-path/";
-            var cssPath = "";
-            var xPath = "";
-
             IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl(url);
 
             try
             {
-                cssPath = "#post-108 > div > figure > img";
-                xPath = "//*[@id=\"post-107\"]/div/figure/img";
+                IWebElement cssPath = driver.FindElement(By.CssSelector("#post-108 > div > figure > img"));
+                IWebElement xPath = driver.FindElement(By.XPath("//*[@id=\"post-107\"]/div/figure/img"));
 
-                IWebElement[] arr = new IWebElement[2];
-                arr[0] = driver.FindElement(By.CssSelector(cssPath));
-                arr[1] = driver.FindElement(By.XPath(xPath));
+                IWebElement[] element = { cssPath , xPath }; 
 
-                for (var i = 0; i < arr.Length; i++)
+                foreach (var i in element)
                 {
-                    if (arr[i].Displayed == true)
+                    if (i == cssPath)
                     {
-                        GreenMessage("Yes, I can see the element , It's rigth there!!");
+                        GreenMessage("yes, i can see the element CSS , it's rigth there!!");
                     }
                     else
                     {
-                        RedMessage("No, Someting wrong!");
+                        GreenMessage("yes, i can see the element XPATH , it's rigth there!!");
                     }
+
                 }
 
             }
             catch (Exception)
             {
-                RedMessage("system err");
+                RedMessage("no, someting wrong!");
             }
 
             driver.Close();
