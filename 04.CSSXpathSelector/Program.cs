@@ -1,60 +1,67 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Threading;
+using NUnit.Framework;
 
 class EntryPoint
 {
-    static void Main()
+    [TestFixture]
+    public class Chrome_Sample_test
     {
-        var url = "http://testing.todvachev.com/selectors/css-path/";
-        var cssPath = "";
-        var xPath = "";
-
-        IWebDriver driver = new ChromeDriver();
-        driver.Navigate().GoToUrl(url);
-
-        try
+        [Test(Description = "Check SauceLabs Homepage for Login Link")]
+        static void Main()
         {
-            cssPath = "#post-108 > div > figure > img";
-            xPath = "//*[@id=\"post-107\"]/div/figure/img";
+            var url = "http://testing.todvachev.com/selectors/css-path/";
+            var cssPath = "";
+            var xPath = "";
 
-            IWebElement[] arr = new IWebElement[2];
-            arr[0] = driver.FindElement(By.CssSelector(cssPath));
-            arr[1] = driver.FindElement(By.XPath(xPath));
+            IWebDriver driver = new ChromeDriver();
+            driver.Navigate().GoToUrl(url);
 
-            for (var i = 0; i < arr.Length; i++)
+            try
             {
-                if (arr[i].Displayed == true)
+                cssPath = "#post-108 > div > figure > img";
+                xPath = "//*[@id=\"post-107\"]/div/figure/img";
+
+                IWebElement[] arr = new IWebElement[2];
+                arr[0] = driver.FindElement(By.CssSelector(cssPath));
+                arr[1] = driver.FindElement(By.XPath(xPath));
+
+                for (var i = 0; i < arr.Length; i++)
                 {
-                    GreenMessage("Yes, I can see the element , It's rigth there!!");
+                    if (arr[i].Displayed == true)
+                    {
+                        GreenMessage("Yes, I can see the element , It's rigth there!!");
+                    }
+                    else
+                    {
+                        RedMessage("No, Someting wrong!");
+                    }
                 }
-                else
-                {
-                    RedMessage("No, Someting wrong!");
-                }
+
             }
-                      
+            catch (Exception)
+            {
+                RedMessage("system err");
+            }
+
+            driver.Close();
         }
-        catch(Exception)
+
+        private static void RedMessage(string message)
         {
-            RedMessage("system err");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(message);
+            //Console.ForegroundColor = ConsoleColor.White;
         }
 
-        driver.Close();
-    }
-
-    private static void RedMessage(string message)
-    {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine(message);
-        //Console.ForegroundColor = ConsoleColor.White;
-    }
-
-    private static void GreenMessage(string message)
-    {
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine(message);
-        //Console.ForegroundColor = ConsoleColor.White;
+        private static void GreenMessage(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(message);
+            //Console.ForegroundColor = ConsoleColor.White;
+        }
     }
 }

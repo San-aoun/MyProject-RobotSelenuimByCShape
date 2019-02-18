@@ -8,3 +8,6 @@ D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\obj\Debug\04.CSSXp
 D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\obj\Debug\04.CSSXpathSelector.csproj.CopyComplete
 D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\obj\Debug\04.CSSXpathSelector.exe
 D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\obj\Debug\04.CSSXpathSelector.pdb
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\bin\Debug\nunit.framework.dll
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\bin\Debug\nunit.framework.pdb
+D:\GitHub\MyProject-RobotSelenuimByCShape\04.CSSXpathSelector\bin\Debug\nunit.framework.xml

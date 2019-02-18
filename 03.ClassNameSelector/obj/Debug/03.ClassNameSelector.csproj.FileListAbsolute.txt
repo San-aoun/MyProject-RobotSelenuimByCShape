@@ -8,3 +8,6 @@ D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\obj\Debug\03.Clas
 D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\obj\Debug\03.ClassNameSelector.csproj.CopyComplete
 D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\obj\Debug\03.ClassNameSelector.exe
 D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\obj\Debug\03.ClassNameSelector.pdb
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\bin\Debug\nunit.framework.dll
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\bin\Debug\nunit.framework.pdb
+D:\GitHub\MyProject-RobotSelenuimByCShape\03.ClassNameSelector\bin\Debug\nunit.framework.xml
